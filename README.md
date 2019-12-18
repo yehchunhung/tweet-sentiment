@@ -1,9 +1,10 @@
 # Machine Learning Project 2
-This is one of the projects of the course, Machine Learning, in EPFL. We intend to analyze the data and make prediction from Higgs Boson dataset given by CERN.
+This is the second projects of the course, Machine Learning, in EPFL. Given the Twitter dataset, we intend to analyze the classification of sentiments by the texts of tweets and predict the sentiment of the text.
 
 ## Table of Contents
 
 - [Getting Started](#getting-started)
+- [Dependencies](#dependencies)
 - [Files Description](#files-description)
 - [Result](#result)
 - [Steps to Reproduce our Result](#steps-to-reproduce-our-result)
