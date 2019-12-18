@@ -24,18 +24,18 @@ Sentiment analysis is an interesting problem to give machines the ability to und
 To run the project you will need the following dependencies installed:
 
 * [FastText]
-    ```sh
-    $ pip install fasttext
+    ```bash
+    pip install fasttext
     ```
     
 * [Torchtext]
-    ```sh
+    ```bash
     pip install torchtext
     ```
     
 * [Transformers]
-    ```sh
-    $ pip install transformers
+    ```bash
+    pip install transformers
     ```
 
 ## Files Description
