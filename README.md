@@ -1,5 +1,5 @@
 # Machine Learning Project 2
-This is the second projects of the course, Machine Learning, in EPFL. Given the Twitter dataset, we intend to analyze the classification of sentiments by the texts of tweets and predict the sentiment of the text.
+This is the second projects of the course, Machine Learning, in EPFL. Given the Twitter dataset, we analize the classification and predict the sentiments by the texts of tweets.
 
 ## Table of Contents
 
@@ -16,16 +16,25 @@ This is the second projects of the course, Machine Learning, in EPFL. Given the 
 
 ## Getting Started
 
-In this project, we use the concepts we have seen in the lectures and labs to this real-world dataset. Specifcially, we do  exploratory data analysis to understand the data, do feature processing and cleaning the dataset to extract more meaningful information. Finally, we implement machine learning algorithms, mainly regressions,  on real data to generate predictions to unseen data.
+
+## Dependencies
+
+To run the project you will need the following dependencies installed:
+
+* [FastText] - Install FastText implementation
+
+    ```sh
+    $ pip install fasttext
+    ```
+    ```sh
+    $ pip install transformers torchtext
+    ```
 
 ## Files Description
 
-- ridge-regression-with-fine-tuning: One of our improved ML method.
 - `activations.py`: Activation functions we used.
-- `implementations.py`: Implementations of the six required ML methods.
-- `nn.py`: Implementation of neural network.
-- `proj1_helper.py`: Useful helper functions for the project (also includes one of our improved ML method (Regularized Logistic Regression with Preprocessing)).
-- `project1.ipynb`: Training and testing of the six required ML methods and our improved ML methods (Regularized logistic regression and Neural Network)
+- `proj1_helper.py`: 
+- `project1.ipynb`:
 - `run.py`: Reproduce our result (includes training and testing)
 
 ## Result
