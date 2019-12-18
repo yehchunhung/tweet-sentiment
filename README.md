@@ -72,5 +72,7 @@ For choosing our best model from our improved methods, we exert 10-fold cross va
 [@Chun-Hung Yeh](https://www.aicrowd.com/participants/yeh)
 [@De-Ling Liu](https://www.aicrowd.com/participants/snoopy)
 
+[FastText]: <https://pypi.python.org/pypi/fasttext>
+
 ## License
 Licensed under [MIT License](LICENSE)
