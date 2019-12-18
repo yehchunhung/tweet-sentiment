@@ -12,7 +12,7 @@ This is the second project of the EPFL Machine Learning course, Fall 2019. In th
 
 ## Dependencies
 
-To run the project you will need the following dependencies installed:
+We implemented in Python 3. You will need the following dependencies installed:
 
 * [FastText]
     ```bash
@@ -29,12 +29,22 @@ To run the project you will need the following dependencies installed:
     $ pip install transformers
     ```
 
+* [tqdm]
+    ```bash
+    $ pip install tqdm
+    ```
+
 ## Files Description
 
-- `activations.py`: Activation functions we used.
-- `proj_helper.py`: 
-- `project.ipynb`:
-- `run.py`: Reproduce our result (includes training and testing)
+- `bagging.ipynb`: Simple voting (could be used after training and testing in bert_based.ipynb).
+- `bert_based.ipynb`: Traning and testing procedure for BERT based models
+- `fasttext.ipynb`: 
+- `helpers.py`: 
+- `run.py`: Codes to reproduce our result (use run.sh to reproduce)
+- `run.sh`: Script to reproduce our result. There are two methods to do it:  
+  (1) Use trained model to get the our best prediction  
+  (2) Vote from predictions to get the our best prediction (default)
+  You can comment out the one you don't want. Be sure to change the *test_data_dir* argument if you choose the first method.
 
 ## Result
 * AIcrowd competition link: https://www.aicrowd.com/challenges/epfl-machine-learning-higgs-2019
@@ -61,6 +71,7 @@ To run the project you will need the following dependencies installed:
 [FastText]: <https://pypi.python.org/pypi/fasttext>
 [Torchtext]: <https://pypi.org/project/torchtext/>
 [Transformers]: <https://pypi.org/project/transformers/>
+[tqdm]: <https://pypi.org/project/tqdm/>
 
 ## License
 Licensed under [MIT License](LICENSE)
