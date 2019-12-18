@@ -1,5 +1,5 @@
 # Machine Learning Project 2
-This is the second projects of the EPFL Machine Learning course CS-433, Fall 2019. In the project, we are given  dataset containing 2.5 millions tweets. Half of the tweets are labeled with positive sentiment and the other half negative. Our task is to predict the testing set of 10000 unlabeled tweets. 
+This is the second projects of the EPFL Machine Learning course, Fall 2019. In the project, we are given a dataset containing 2.5 millions tweets. Half of the tweets are labeled with positive sentiment and the other half negative. Our task is to predict the testing set of 10000 unlabeled tweets. 
 
 ## Table of Contents
 
