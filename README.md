@@ -1,21 +1,14 @@
 # Machine Learning Project 2
-This is the second projects of the course, Machine Learning, in EPFL. Given the Twitter dataset, we analize the classification and predict the sentiments by the texts of tweets.
+This is the second projects of the EPFL Machine Learning course CS-433, Fall 2019. In the project, we are given dataset containing 2.5 millions tweets. Half of the tweets are labeled with positive sentiment and the other half negative. Our task is to predict the testing set of 10000 unlabeled tweets. 
 
 ## Table of Contents
 
-- [Getting Started](#getting-started)
 - [Dependencies](#dependencies)
 - [Files Description](#files-description)
 - [Result](#result)
 - [Steps to Reproduce our Result](#steps-to-reproduce-our-result)
 - [Developers](#developers)
 - [License](#license)
-
-## Getting Started
-
-This pro
-
-In this project, we present a comprehensive study of sentiment analysis on Twitter data, where the task is to predict the smiley to be positive or negative, given the tweet message. With a fully automated framework, we developed and experimented with the most powerful proposed solutions in the related literature, including text preprocessing, text representation, also known as feature extraction, and supervised classification techniques. Different combinations of these algorithms led to a better understanding of each component and exhausting test procedures resulted in a very high classification score on our final results.
 
 ## Dependencies
 
