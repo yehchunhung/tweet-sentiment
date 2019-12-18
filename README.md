@@ -13,11 +13,9 @@ This is the second projects of the course, Machine Learning, in EPFL. Given the 
 
 ## Getting Started
 
+This pro
 
-
-In this project, we use the concepts we have seen in the lectures and labs to this real-world dataset. Specifcially, we do exploratory data analysis to understand the data, do feature processing and cleaning the dataset to extract more meaningful information. Finally, we implement machine learning algorithms, mainly regressions, on real data to generate predictions to unseen data.
-
-Sentiment analysis is an interesting problem to give machines the ability to understand human emotion. This is a challenging task due to the complexity of languages, which make use of rhetorical devices such as sarcasm or irony. Twitter is a popular social medium for people to convey opinions; hence a successful sentiment classifier based on its data could offer interesting trends regarding prominent topics in the news. For example, one could gauge the popular opinion of politicians by calculating the sentiment from all tweets containing the politicians' information. Sentiment analysis in Twitter is a significantly different paradigm since its users are only allowed to post short tweets. Moreover, from most social network platform, users create their own words and spelling shortcuts making this task even more challenging. The aim of this project is to build an accurate text classifier for tweets. That is, our classification model determines whether the given tweet reflects positivity or negativity on the users' behalf. In addition, we would like to discuss numerous methods for building such classifier including classic ML algorithms and advanced neural networks.
+In this project, we present a comprehensive study of sentiment analysis on Twitter data, where the task is to predict the smiley to be positive or negative, given the tweet message. With a fully automated framework, we developed and experimented with the most powerful proposed solutions in the related literature, including text preprocessing, text representation, also known as feature extraction, and supervised classification techniques. Different combinations of these algorithms led to a better understanding of each component and exhausting test procedures resulted in a very high classification score on our final results.
 
 ## Dependencies
 
