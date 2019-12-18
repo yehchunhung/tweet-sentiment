@@ -8,9 +8,6 @@ This is the second projects of the course, Machine Learning, in EPFL. Given the 
 - [Files Description](#files-description)
 - [Result](#result)
 - [Steps to Reproduce our Result](#steps-to-reproduce-our-result)
-  - [Data Preparation](#data-preparation)
-  - [Feature Engineering](#feature-engineering)
-  - [Cross Validation](#cross-validation)
 - [Developers](#developers)
 - [License](#license)
 
@@ -58,8 +55,6 @@ To run the project you will need the following dependencies installed:
     ```
     
 3. The prediction will be saved at OUTPUT_PATH specified in run.py (default to test.csv)
-
----
 
 
 ## Developers
