@@ -30,7 +30,7 @@ To run the project you will need the following dependencies installed:
     
 * [Torchtext]
     ```sh
-    $ pip install torchtext
+    pip install torchtext
     ```
     
 * [Transformers]
