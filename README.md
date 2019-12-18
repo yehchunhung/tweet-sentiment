@@ -25,17 +25,17 @@ To run the project you will need the following dependencies installed:
 
 * [FastText]
     ```bash
-    pip install fasttext
+    $ pip install fasttext
     ```
     
 * [Torchtext]
     ```bash
-    pip install torchtext
+    $ pip install torchtext
     ```
     
 * [Transformers]
     ```bash
-    pip install transformers
+    $ pip install transformers
     ```
 
 ## Files Description
@@ -56,7 +56,7 @@ To run the project you will need the following dependencies installed:
 1. Change DATA_TRAIN_PATH and DATA_TEST_PATH specified in run.py to the paths of your training and testing data
 2. Execute the following command
     ```bash
-    python run.py
+    $ python run.py
     ```
     
 3. The prediction will be saved at OUTPUT_PATH specified in run.py (default to test.csv)
