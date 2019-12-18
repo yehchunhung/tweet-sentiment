@@ -21,13 +21,19 @@ This is the second projects of the course, Machine Learning, in EPFL. Given the 
 
 To run the project you will need the following dependencies installed:
 
-* [FastText] - Install FastText implementation
-
+* [FastText]
     ```sh
     $ pip install fasttext
     ```
+    
+* [Torchtext]
     ```sh
-    $ pip install transformers torchtext
+    $ pip install torchtext
+    ```
+    
+* [Transformers]
+    ```sh
+    $ pip install transformers
     ```
 
 ## Files Description
@@ -41,8 +47,8 @@ To run the project you will need the following dependencies installed:
 * AIcrowd competition link: https://www.aicrowd.com/challenges/epfl-machine-learning-higgs-2019
 * Group name: **TWN1**
 * Leaderboard 
-  - **0.839** of categorical accuracy.
-  - **0.754** of F1 score.
+  - **0.909** of categorical accuracy.
+  - **0.909** of F1 score.
 
 ## Steps to reproduce our result
 1. Change DATA_TRAIN_PATH and DATA_TEST_PATH specified in run.py to the paths of your training and testing data
@@ -73,6 +79,8 @@ For choosing our best model from our improved methods, we exert 10-fold cross va
 [@De-Ling Liu](https://www.aicrowd.com/participants/snoopy)
 
 [FastText]: <https://pypi.python.org/pypi/fasttext>
+[Torchtext]: <https://pypi.org/project/torchtext/>
+[Transformers]: <https://pypi.org/project/transformers/>
 
 ## License
 Licensed under [MIT License](LICENSE)
