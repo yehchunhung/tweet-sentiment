@@ -25,7 +25,7 @@ To run the project you will need the following dependencies installed:
 
 * [FastText]
     ```bash
-    $ pip install fasttext
+    pip install fasttext
     ```
     
 * [Torchtext]
