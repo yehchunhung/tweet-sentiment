@@ -7,6 +7,7 @@ This is the second project of the EPFL Machine Learning course, Fall 2019. In th
 - [Result](#result)
 - [Steps to Reproduce our Result](#steps-to-reproduce-our-result)
 - [Developers](#developers)
+- [References](#references)
 - [License](#license)
 
 ## Dependencies
@@ -47,8 +48,8 @@ We implemented in Python 3. You will need the following dependencies installed:
 - `tfidf_word2vec/helpers_simple_ml.py`: Helpful functions used in tf_idf.ipynb and word2vec.ipynb.
 - `bagging.ipynb`: Simple voting (could be used after training and testing in bert_based.ipynb).
 - `bert_based.ipynb`: Traning and testing procedures for BERT based models.
-- `fasttext.ipynb`: 
-- `helpers.py`: 
+- `fasttext.ipynb`: Traning and testing procedures for fasttext based model.
+- `helpers.py`: Useful helper functions for the fasttext model
 - `run.py`: Codes to reproduce our result
 
 ## Result
