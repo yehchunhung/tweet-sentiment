@@ -76,6 +76,8 @@ We implemented in Python 3. You will need the following dependencies installed:
 [@Chun-Hung Yeh](https://www.aicrowd.com/participants/yeh)
 [@De-Ling Liu](https://www.aicrowd.com/participants/snoopy)
 
+[NLTK]: <https://pypi.org/project/nltk/>
+[Gensim]: <https://pypi.org/project/gensim/>
 [FastText]: <https://pypi.python.org/pypi/fasttext>
 [Torchtext]: <https://pypi.org/project/torchtext/>
 [Transformers]: <https://pypi.org/project/transformers/>
