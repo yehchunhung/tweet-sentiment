@@ -15,6 +15,7 @@ import torch
 from tqdm.auto import tqdm
 
 from torchtext import data
+from transformers import AutoConfig
 from transformers import AutoTokenizer
 
 SEED = 77
@@ -25,6 +26,11 @@ np.random.seed(SEED)
 torch.manual_seed(SEED)
 torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
+
+# pick the epochs we want
+bert_picks = [1, 2, 3, 4, 5]
+roberta_picks = [1, 2, 3, 4, 5]
+xlnet_picks = [1, 2, 3]
 
 
 class DataFrameDataset(data.Dataset):
@@ -63,19 +69,28 @@ def test(model, iterator):
 def test_model(test_data_dir):
     """ Use trained models to get the final prediction """
     pretrained_models = ['bert-base-uncased', 'xlnet-base-cased', 'roberta-base']
+    # load testing data into pandas DataFrame
+    with open(test_data_dir) as f:
+        test_lines = [line.rstrip('\n')[line.rstrip('\n').find(',') + 1:] for line in f]
+
+    test_df = pd.DataFrame(test_lines, columns=['text'])
+    # because the model input required some label we won't use this though
+    test_df['label'] = 1
+
     for pretrained_model in pretrained_models:
         # load model
         if pretrained_model == 'bert-base-uncased':
             from transformers import BertForSequenceClassification as SequenceClassificationModel
-            selected_epochs = [1, 2, 3, 4, 5]
+            selected_epochs = bert_picks
         elif pretrained_model == 'xlnet-base-cased':
             from transformers import XLNetForSequenceClassification as SequenceClassificationModel
-            selected_epochs = [1, 2, 3]
+            selected_epochs = xlnet_picks
         elif pretrained_model == 'roberta-base':
             from transformers import RobertaForSequenceClassification as SequenceClassificationModel
-            selected_epochs = [1, 2, 3, 4, 5]
+            selected_epochs = roberta_picks
 
-        model = SequenceClassificationModel.from_pretrained(pretrained_model)
+        config = AutoConfig.from_pretrained(pretrained_model)
+        model = SequenceClassificationModel(config)
 
         # load tokenizer
         tokenizer = AutoTokenizer.from_pretrained(pretrained_model)
@@ -111,14 +126,6 @@ def test_model(test_data_dir):
         )
 
         LABEL = data.LabelField(dtype=torch.long, use_vocab=False)
-
-        with open(test_data_dir) as f:
-            test_lines = [line.rstrip('\n')[line.rstrip('\n').find(',') + 1:] for line in f]
-
-        test_df = pd.DataFrame(test_lines, columns=['text'])
-        # because the model input required some label
-        # we won't use this though
-        test_df['label'] = 1
 
         # transform DataFrame into torchtext Dataset
         print('Transforming testing data for', pretrained_model, 'model')
@@ -160,10 +167,6 @@ def test_predictions(base_dir='predictions'):
     bert = 'bert-base-uncased'
     roberta = 'roberta-base'
     xlnet = 'xlnet-base-cased'
-
-    bert_picks = [1, 2, 3, 4, 5]
-    roberta_picks = [1, 2, 3, 4, 5]
-    xlnet_picks = [1, 2, 3]
 
     # load all predictions
     predictions = []
