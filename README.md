@@ -61,7 +61,7 @@ We implemented in Python 3. You will need the following dependencies installed:
 
 ## Steps to reproduce our result
 There are two methods to reproduce our result
-1. Use trained models to get predictions and vote from them to get our best prediction. It takes about 2.5 hours to run with CPU. With GPU, it can be faster.) 
+1. Use trained models to get predictions and vote from them to get our best prediction. It takes about 2.5 hours to run with CPU. With GPU, it can be faster.  
 2. Vote from predictions to get our best prediction. It takes only a few seconds to run.
 
 Here are the steps:
