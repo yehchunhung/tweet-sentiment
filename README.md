@@ -44,8 +44,11 @@ We implemented in Python 3. You will need the following dependencies installed:
     ```
 
 ## Files Description
+- `tfidf_word2vec/tf_idf.ipynb`: Traning and testing procedure for simple ML models using TF-IDF matrx.
+- `tfidf_word2vec/word2vec.ipynb`: Traning and testing procedure for simple ML models using Word2Vec matrx.
+- `tfidf_word2vec/helpers_simple_ml.py`: Helpful functions used in tf_idf.ipynb and word2vec.ipynb.
 - `bagging.ipynb`: Simple voting (could be used after training and testing in bert_based.ipynb).
-- `bert_based.ipynb`: Traning and testing procedure for BERT based models
+- `bert_based.ipynb`: Traning and testing procedure for BERT based models.
 - `fasttext.ipynb`: 
 - `helpers.py`: 
 - `run.py`: Codes to reproduce our result (use run.sh to reproduce)
