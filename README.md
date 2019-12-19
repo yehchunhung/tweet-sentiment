@@ -14,6 +14,15 @@ This is the second project of the EPFL Machine Learning course, Fall 2019. In th
 
 We implemented in Python 3. You will need the following dependencies installed:
 
+* [NLTK]
+    ```bash
+    $ pip install nltk
+    ```
+* [Gensim]
+    ```bash
+    $ pip install gensim
+    ```
+
 * [FastText]
     ```bash
     $ pip install fasttext
@@ -35,7 +44,6 @@ We implemented in Python 3. You will need the following dependencies installed:
     ```
 
 ## Files Description
-
 - `bagging.ipynb`: Simple voting (could be used after training and testing in bert_based.ipynb).
 - `bert_based.ipynb`: Traning and testing procedure for BERT based models
 - `fasttext.ipynb`: 
