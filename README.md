@@ -48,8 +48,8 @@ We implemented in Python 3. You will need the following dependencies installed:
 - `tfidf_word2vec/helpers_simple_ml.py`: Helpful functions used in tf_idf.ipynb and word2vec.ipynb.
 - `bagging.ipynb`: Simple voting (could be used after training and testing in bert_based.ipynb).
 - `bert_based.ipynb`: Traning and testing procedures for BERT based models.
-- `fasttext.ipynb`: Traning and testing procedures for fasttext based model.
-- `helpers.py`: Useful helper functions for the fasttext model
+- `fasttext/fasttext.ipynb`: Traning and testing procedures for fasttext based model.
+- `fasttext/helpers.py`: Useful helper functions for the fasttext model
 - `run.py`: Codes to reproduce our result
 
 ## Result
