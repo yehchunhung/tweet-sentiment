@@ -1,4 +1,4 @@
-# Machine Learning Project 2
+# Tweet Sentiment Classification
 This is the second project of the EPFL Machine Learning course, Fall 2019. In the project, we are given a dataset containing 2.5 millions tweets. Half of the tweets are labeled with positive sentiment and the rest are negative. Our task is to predict 10000 unlabeled tweets in the testing set. 
 
 ## Table of Contents
