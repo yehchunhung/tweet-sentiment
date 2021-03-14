@@ -53,7 +53,7 @@ We implemented in Python 3. You will need the following dependencies installed:
 - `run.py`: Codes to reproduce our result
 
 ## Result
-* AIcrowd competition link: https://www.aicrowd.com/challenges/epfl-machine-learning-higgs-2019
+* AIcrowd competition link: https://www.aicrowd.com/challenges/epfl-ml-text-classification-01b777b0-a83a-412a-b6f8-f3dc53cb1bce
 * Group name: **TWN1**
 * Leaderboard 
   - **0.909** of categorical accuracy.
